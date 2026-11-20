@@ -11,16 +11,16 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 /**
  * Client-only registrations: block entity renderers.
  */
-@EventBusSubscriber(modid = CreateExampleAddon.MOD_ID, value = Dist.CLIENT, bus = EventBusSubscriber.Bus.MOD)
+@EventBusSubscriber(modid = CreateExampleAddon.MOD_ID, value = Dist.CLIENT)
 public final class CreateExampleAddonClient {
 
-	@SubscribeEvent
-	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		// Load partial models early so they are baked with the other models
-		ModPartialModels.class.getName();
+        @SubscribeEvent
+        public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
+                // Load partial models early so they are baked with the other models
+                ModPartialModels.class.getName();
 
-		event.registerBlockEntityRenderer(ModBlockEntities.CHIP_FABRICATOR.get(), ChipFabricatorRenderer::new);
-	}
+                event.registerBlockEntityRenderer(ModBlockEntities.CHIP_FABRICATOR.get(), ChipFabricatorRenderer::new);
+        }
 
-	private CreateExampleAddonClient() {}
+        private CreateExampleAddonClient() {}
 }
