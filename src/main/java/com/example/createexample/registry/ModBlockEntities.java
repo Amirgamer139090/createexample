@@ -18,23 +18,24 @@ import net.neoforged.neoforge.registries.DeferredRegister;
  */
 public class ModBlockEntities {
 
-	public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
-		DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, CreateExampleAddon.MOD_ID);
+        public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITIES =
+                DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, CreateExampleAddon.MOD_ID);
 
-	public static final Supplier<BlockEntityType<ChipFabricatorBlockEntity>> CHIP_FABRICATOR =
-		BLOCK_ENTITIES.register("chip_fabricator",
-			() -> BlockEntityType.Builder
-				.of(ChipFabricatorBlockEntity::new, ModBlocks.CHIP_FABRICATOR.get())
-				.build(null));
+        public static final Supplier<BlockEntityType<ChipFabricatorBlockEntity>> CHIP_FABRICATOR =
+                BLOCK_ENTITIES.register("chip_fabricator",
+                        () -> BlockEntityType.Builder
+                                .of((pos, state) -> new ChipFabricatorBlockEntity(ModBlockEntities.CHIP_FABRICATOR.get(), pos, state),
+                                        ModBlocks.CHIP_FABRICATOR.get())
+                                .build(null));
 
-	/**
-	 * Expose the machine's inventory to hoppers, funnels and Create belts.
-	 * Must be called on the MOD event bus from the main mod class context.
-	 */
-	public static void registerCapabilities(RegisterCapabilitiesEvent event) {
-		event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CHIP_FABRICATOR.get(),
-			(be, context) -> be.capability);
-	}
+        /**
+         * Expose the machine's inventory to hoppers, funnels and Create belts.
+         * Must be called on the MOD event bus from the main mod class context.
+         */
+        public static void registerCapabilities(RegisterCapabilitiesEvent event) {
+                event.registerBlockEntity(Capabilities.ItemHandler.BLOCK, CHIP_FABRICATOR.get(),
+                        (be, context) -> be.capability);
+        }
 
-	private ModBlockEntities() {}
+        private ModBlockEntities() {}
 }

@@ -49,9 +49,10 @@ dependencies {
     // The Create mod itself. On the compile classpath AND in the dev runtime.
     implementation "com.simibubi.create:create-${minecraft_version}:${create_version}"
 
-    // Catnip and Flywheel are runtime-scoped in Create's POM, so we add them
+    // Catnip, Ponder and Flywheel are runtime-scoped in Create's POM, so we add them
     // explicitly to have their classes available while compiling.
     implementation "net.createmod.catnip:Catnip-NeoForge-${minecraft_version}:${catnip_version}"
+    implementation "net.createmod.ponder:ponder-neoforge:${ponder_version}"
     implementation "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
 }
 

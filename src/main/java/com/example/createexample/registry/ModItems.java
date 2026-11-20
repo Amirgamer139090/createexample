@@ -2,6 +2,7 @@ package com.example.createexample.registry;
 
 import com.example.createexample.CreateExampleAddon;
 
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -57,12 +58,12 @@ public class ModItems {
         public static final DeferredItem<Item> TABLET = ITEMS.registerSimpleItem("tablet");
 
         // ---- Block items ----
-        public static final DeferredItem<Item> CHIP_FABRICATOR_ITEM = ITEMS.registerSimpleBlockItem("chip_fabricator",
+        public static final DeferredItem<BlockItem> CHIP_FABRICATOR_ITEM = ITEMS.registerSimpleBlockItem("chip_fabricator",
                 ModBlocks.CHIP_FABRICATOR);
-        public static final DeferredItem<Item> COMPUTER_CASE_ITEM = ITEMS.registerSimpleBlockItem("computer_case",
+        public static final DeferredItem<BlockItem> COMPUTER_CASE_ITEM = ITEMS.registerSimpleBlockItem("computer_case",
                 ModBlocks.COMPUTER_CASE);
-        public static final DeferredItem<Item> MONITOR_ITEM = ITEMS.registerSimpleBlockItem("monitor", ModBlocks.MONITOR);
-        public static final DeferredItem<Item> SPEAKERS_ITEM = ITEMS.registerSimpleBlockItem("speakers",
+        public static final DeferredItem<BlockItem> MONITOR_ITEM = ITEMS.registerSimpleBlockItem("monitor", ModBlocks.MONITOR);
+        public static final DeferredItem<BlockItem> SPEAKERS_ITEM = ITEMS.registerSimpleBlockItem("speakers",
                 ModBlocks.SPEAKERS);
 
         private ModItems() {}
