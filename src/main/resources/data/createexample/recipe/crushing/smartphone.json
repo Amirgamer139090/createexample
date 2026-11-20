@@ -1,0 +1,19 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createexample:smartphone"
+    }
+  ],
+  "results": [
+    {
+      "count": 2,
+      "id": "createexample:microchip"
+    },
+    {
+      "id": "minecraft:iron_nugget",
+      "chance": 0.5
+    }
+  ],
+  "processing_time": 250
+}

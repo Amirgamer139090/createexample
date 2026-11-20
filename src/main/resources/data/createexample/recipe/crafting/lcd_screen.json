@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "C": {
+      "item": "create:copper_sheet"
+    },
+    "M": {
+      "item": "createexample:microchip"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "CMC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:lcd_screen"
+  }
+}

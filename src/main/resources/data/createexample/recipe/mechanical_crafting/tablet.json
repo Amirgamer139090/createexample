@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "L": {
+      "item": "createexample:lcd_screen"
+    },
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "P": {
+      "item": "createexample:pcb"
+    },
+    "N": {
+      "item": "createexample:network_card"
+    }
+  },
+  "pattern": [
+    "ILI",
+    "MPM",
+    "INI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:tablet"
+  }
+}

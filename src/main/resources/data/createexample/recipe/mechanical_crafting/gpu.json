@@ -1,0 +1,30 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "P": {
+      "item": "createexample:pcb"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "C": {
+      "item": "create:copper_sheet"
+    }
+  },
+  "pattern": [
+    "MBM",
+    "MPM",
+    "ECE"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:gpu"
+  }
+}

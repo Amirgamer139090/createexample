@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "P": {
+      "item": "createexample:pcb"
+    }
+  },
+  "pattern": [
+    "G",
+    "M",
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:ram_stick"
+  }
+}

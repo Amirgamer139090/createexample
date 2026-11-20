@@ -1,0 +1,47 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "create:iron_sheet"
+    },
+    "P": {
+      "item": "createexample:psu"
+    },
+    "L": {
+      "item": "createexample:ssd"
+    },
+    "H": {
+      "item": "createexample:hdd"
+    },
+    "C": {
+      "item": "createexample:cpu"
+    },
+    "M": {
+      "item": "createexample:motherboard"
+    },
+    "R": {
+      "item": "createexample:ram_stick"
+    },
+    "V": {
+      "item": "createexample:sound_card"
+    },
+    "G": {
+      "item": "createexample:gpu"
+    },
+    "N": {
+      "item": "createexample:network_card"
+    }
+  },
+  "pattern": [
+    "SSSSS",
+    "SPLHS",
+    "SCMRS",
+    "SVGNS",
+    "SSSSS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:computer_case"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "S": {
+      "item": "minecraft:string"
+    },
+    "N": {
+      "item": "minecraft:note_block"
+    }
+  },
+  "pattern": [
+    "ISI",
+    "INI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:headphones"
+  }
+}

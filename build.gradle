@@ -1,0 +1,60 @@
+plugins {
+    id 'java-library'
+    id 'net.neoforged.moddev' version '2.0.148'
+}
+
+version = project.mod_version
+group = project.mod_group_id
+
+base {
+    archivesName = project.mod_id
+}
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+neoForge {
+    version = project.neo_version
+
+    runs {
+        client {
+            client()
+            gameDirectory = file('run')
+        }
+        server {
+            server()
+            programArguments = ['--nogui']
+        }
+    }
+
+    mods {
+        createexample {
+            sourceSet(sourceSets.main)
+        }
+    }
+}
+
+repositories {
+    // Create mod and its libraries (Catnip, Ponder, Flywheel)
+    maven {
+        name = 'CreateModMaven'
+        url = 'https://maven.createmod.net'
+    }
+}
+
+dependencies {
+    // The Create mod itself. On the compile classpath AND in the dev runtime.
+    implementation "com.simibubi.create:create-${minecraft_version}:${create_version}"
+
+    // Catnip and Flywheel are runtime-scoped in Create's POM, so we add them
+    // explicitly to have their classes available while compiling.
+    implementation "net.createmod.catnip:Catnip-NeoForge-${minecraft_version}:${catnip_version}"
+    implementation "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}

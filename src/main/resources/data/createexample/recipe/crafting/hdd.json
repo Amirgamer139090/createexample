@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    },
+    "P": {
+      "item": "createexample:pcb"
+    }
+  },
+  "pattern": [
+    "MS",
+    "PS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:hdd"
+  }
+}

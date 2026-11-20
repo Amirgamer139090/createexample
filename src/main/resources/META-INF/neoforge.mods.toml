@@ -1,0 +1,38 @@
+modLoader = "javafml"
+loaderVersion = "[0,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/yourname/createexample/issues"
+
+[[mods]]
+modId = "createexample"
+version = "0.1.0"
+displayName = "Create Example Addon: Computer Tech"
+authors = "YourName"
+description = '''
+A Create addon that adds computer technology to the game:
+raw materials, PC components, storage devices, peripherals,
+a fully assembleable computer, a smartphone and a tablet -
+all manufactured with the help of the Chip Fabricator,
+a new kinetic machine powered by rotational force.
+'''
+
+[[dependencies.createexample]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1.0,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createexample]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.createexample]]
+modId = "create"
+type = "required"
+versionRange = "[6.0.10,)"
+ordering = "AFTER"
+side = "BOTH"

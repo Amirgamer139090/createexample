@@ -1,0 +1,14 @@
+{
+  "type": "createexample:chip_fabricating",
+  "ingredients": [
+    {
+      "item": "createexample:silicon_wafer"
+    }
+  ],
+  "results": [
+    {
+      "id": "createexample:microchip"
+    }
+  ],
+  "processing_time": 150
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "C": {
+      "item": "create:copper_sheet"
+    }
+  },
+  "pattern": [
+    "BRB",
+    "BCB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:psu"
+  }
+}

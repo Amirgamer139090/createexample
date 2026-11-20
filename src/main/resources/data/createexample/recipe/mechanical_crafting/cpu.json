@@ -1,0 +1,27 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "create:brass_sheet"
+    },
+    "E": {
+      "item": "create:electron_tube"
+    },
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "P": {
+      "item": "createexample:pcb"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "EME",
+    "MPM"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:cpu"
+  }
+}

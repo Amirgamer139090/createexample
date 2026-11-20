@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "L": {
+      "item": "createexample:lcd_screen"
+    }
+  },
+  "pattern": [
+    "ISI",
+    "ILI",
+    "ISI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:monitor"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:note_block"
+    },
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "C": {
+      "item": "create:copper_sheet"
+    }
+  },
+  "pattern": [
+    "N",
+    "M",
+    "C"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:sound_card"
+  }
+}

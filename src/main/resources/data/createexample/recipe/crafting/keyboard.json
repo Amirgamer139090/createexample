@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "B": {
+      "item": "minecraft:stone_button"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    },
+    "P": {
+      "item": "createexample:pcb"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "SPS"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:keyboard"
+  }
+}

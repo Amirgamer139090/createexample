@@ -1,0 +1,33 @@
+{
+  "type": "create:mechanical_crafting",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "create:iron_sheet"
+    },
+    "L": {
+      "item": "createexample:lcd_screen"
+    },
+    "R": {
+      "item": "createexample:ram_stick"
+    },
+    "S": {
+      "item": "createexample:phone_shell"
+    },
+    "V": {
+      "item": "createexample:vibration_motor"
+    },
+    "M": {
+      "item": "createexample:microchip"
+    }
+  },
+  "pattern": [
+    "ILI",
+    "RSV",
+    "IMI"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:smartphone"
+  }
+}

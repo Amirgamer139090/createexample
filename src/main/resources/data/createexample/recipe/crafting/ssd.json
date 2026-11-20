@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "P": {
+      "item": "createexample:pcb"
+    }
+  },
+  "pattern": [
+    "M",
+    "M",
+    "P"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:ssd"
+  }
+}

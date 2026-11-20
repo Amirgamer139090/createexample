@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "createexample:microchip"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "pattern": [
+    "M",
+    "S"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:usb_flash"
+  }
+}

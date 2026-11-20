@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "create:copper_sheet"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "I",
+    "C",
+    "R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:microphone"
+  }
+}

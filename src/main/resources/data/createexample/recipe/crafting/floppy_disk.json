@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "create:iron_sheet"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "P",
+    "S",
+    "R"
+  ],
+  "result": {
+    "count": 1,
+    "id": "createexample:floppy_disk"
+  }
+}

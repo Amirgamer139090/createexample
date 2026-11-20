@@ -1,0 +1,18 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "createexample:hdd"
+    }
+  ],
+  "results": [
+    {
+      "id": "minecraft:iron_ingot"
+    },
+    {
+      "id": "create:precision_mechanism",
+      "chance": 0.5
+    }
+  ],
+  "processing_time": 250
+}

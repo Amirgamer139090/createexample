@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createexample:silicon_ingot"
+    }
+  ],
+  "results": [
+    {
+      "item": "createexample:silicon_wafer"
+    }
+  ]
+}
