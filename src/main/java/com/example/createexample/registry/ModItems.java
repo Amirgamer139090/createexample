@@ -1,6 +1,8 @@
 package com.example.createexample.registry;
 
 import com.example.createexample.CreateExampleAddon;
+import com.example.createexample.content.SmartphoneItem;
+import com.example.createexample.content.TabletItem;
 
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -53,9 +55,11 @@ public class ModItems {
         public static final DeferredItem<Item> MICROPHONE = ITEMS.registerSimpleItem("microphone");
         public static final DeferredItem<Item> WEBCAM = ITEMS.registerSimpleItem("webcam");
 
-        // ---- Devices ----
-        public static final DeferredItem<Item> SMARTPHONE = ITEMS.registerSimpleItem("smartphone");
-        public static final DeferredItem<Item> TABLET = ITEMS.registerSimpleItem("tablet");
+        // ---- Devices (right-click to use) ----
+        public static final DeferredItem<Item> SMARTPHONE = ITEMS.register("smartphone",
+                () -> new SmartphoneItem(new Item.Properties()));
+        public static final DeferredItem<Item> TABLET = ITEMS.register("tablet",
+                () -> new TabletItem(new Item.Properties()));
 
         // ---- Block items ----
         public static final DeferredItem<BlockItem> CHIP_FABRICATOR_ITEM = ITEMS.registerSimpleBlockItem("chip_fabricator",
