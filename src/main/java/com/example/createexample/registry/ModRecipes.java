@@ -65,6 +65,11 @@ public class ModRecipes {
                 Supplier<? extends RecipeType<?>> type) implements IRecipeTypeInfo {
 
                 @Override
+                public ResourceLocation getId() {
+                        return id;
+                }
+
+                @Override
                 @SuppressWarnings("unchecked")
                 public <T extends RecipeSerializer<?>> T getSerializer() {
                         return (T) serializer.get();
