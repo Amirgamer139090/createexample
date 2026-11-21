@@ -1,8 +1,9 @@
 package com.example.createexample.content;
 
+import com.mojang.serialization.MapCodec;
+
 import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.state.BlockState;
 
@@ -13,9 +14,18 @@ import net.minecraft.world.level.block.state.BlockState;
  */
 public class FrontFacingBlock extends HorizontalDirectionalBlock {
 
+        public static final MapCodec<FrontFacingBlock> CODEC = simpleCodec(FrontFacingBlock::new);
+
         public FrontFacingBlock(Properties properties) {
                 super(properties);
                 registerDefaultState(stateDefinition.any().setValue(FACING, Direction.NORTH));
+        }
+
+        // Every 1.21 block class must expose its codec; HorizontalDirectionalBlock
+        // re-declares this method as abstract, so subclasses cannot skip it.
+        @Override
+        protected MapCodec<? extends HorizontalDirectionalBlock> codec() {
+                return CODEC;
         }
 
         @Override
