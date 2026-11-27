@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "createexample:block/speakers" },
-    "facing=east": { "model": "createexample:block/speakers", "y": 90 },
-    "facing=south": { "model": "createexample:block/speakers", "y": 180 },
-    "facing=west": { "model": "createexample:block/speakers", "y": 270 }
-  }
-}

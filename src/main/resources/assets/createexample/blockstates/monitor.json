@@ -1,8 +1,0 @@
-{
-  "variants": {
-    "facing=north": { "model": "createexample:block/monitor" },
-    "facing=east": { "model": "createexample:block/monitor", "y": 90 },
-    "facing=south": { "model": "createexample:block/monitor", "y": 180 },
-    "facing=west": { "model": "createexample:block/monitor", "y": 270 }
-  }
-}
