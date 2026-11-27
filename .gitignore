@@ -1,21 +1,7 @@
-# Gradle
 .gradle/
 build/
 out/
-classes/
-run/
-runs/
-
-# IDE
 .idea/
+run/
 *.iml
-*.ipr
-*.iws
-.vscode/
-.settings/
-.classpath
-.project
-bin/
-
-# Misc
-*.log
+.DS_Store
